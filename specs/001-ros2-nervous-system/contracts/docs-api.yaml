@@ -1,0 +1,51 @@
+# API Contract: Documentation Content Access
+
+## Purpose
+This API contract defines the interface for accessing documentation content, primarily intended for integration with the RAG chatbot system mentioned in the project constitution.
+
+## Endpoints
+
+### GET /api/docs/{module}/{chapter}
+**Description**: Retrieve documentation content for a specific chapter in a module
+**Parameters**:
+- module (string): The module identifier (e.g., "ros2-nervous-system")
+- chapter (string): The chapter identifier (e.g., "introduction-to-ros2")
+
+**Response**:
+```json
+{
+  "module": "ros2-nervous-system",
+  "chapter": "introduction-to-ros2",
+  "title": "Introduction to ROS 2 as a Robotic Nervous System",
+  "content": "Full markdown content of the chapter...",
+  "lastModified": "2025-12-22T10:00:00Z",
+  "prerequisites": ["python-basics", "ai-fundamentals"]
+}
+```
+
+### GET /api/docs/search
+**Description**: Search across all documentation content
+**Query Parameters**:
+- q (string): Search query
+- limit (integer, optional): Maximum number of results (default: 10)
+
+**Response**:
+```json
+{
+  "query": "ROS 2 nodes",
+  "results": [
+    {
+      "module": "ros2-nervous-system",
+      "chapter": "ros2-communication",
+      "title": "ROS 2 Communication: Nodes, Topics, and Services",
+      "excerpt": "Creating and running ROS 2 nodes...",
+      "url": "/docs/ros2-nervous-system/ros2-communication"
+    }
+  ]
+}
+```
+
+## Error Responses
+All endpoints return standard error responses:
+- 404: Content not found
+- 500: Internal server error

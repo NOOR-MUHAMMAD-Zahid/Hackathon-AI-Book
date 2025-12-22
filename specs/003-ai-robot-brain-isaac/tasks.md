@@ -1,0 +1,220 @@
+---
+description: "Task list for Docusaurus implementation of AI-robot brain course"
+---
+
+# Tasks: AI-Robot Brain (NVIDIA Isaac™)
+
+**Input**: Design documents from `/specs/003-ai-robot-brain-isaac/`
+**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
+
+**Tests**: No tests requested in feature specification.
+
+**Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
+
+## Format: `[ID] [P?] [Story] Description`
+
+- **[P]**: Can run in parallel (different files, no dependencies)
+- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
+- Include exact file paths in descriptions
+
+## Path Conventions
+
+- **Repository root**: All paths relative to repository root
+- **Website directory**: `frontend_book/` contains Docusaurus configuration
+- **Documentation**: `docs/` contains course content
+- **Assets**: `docs/assets/` contains images and diagrams
+
+## Phase 1: Setup (Shared Infrastructure)
+
+**Purpose**: Project initialization and basic Docusaurus setup
+
+- [X] T001 Create AI-robot brain directory structure at frontend_book/docs/ai-robot-brain-isaac/
+- [X] T002 [P] Create module index page at frontend_book/docs/ai-robot-brain-isaac/index.md
+- [X] T003 [P] Update docusaurus.config.js to include AI-robot brain module in navigation
+
+---
+
+## Phase 2: Foundational (Blocking Prerequisites)
+
+**Purpose**: Core Docusaurus configuration that MUST be complete before ANY user story can be implemented
+
+**⚠️ CRITICAL**: No user story work can begin until this phase is complete
+
+- [X] T004 Update sidebar configuration in frontend_book/sidebars.js to include AI-robot brain module
+- [X] T005 [P] Create basic CSS styling for AI-robot brain content in frontend_book/src/css/custom.css
+- [X] T006 Create asset directories for images and diagrams at frontend_book/docs/assets/ai-robot-brain-isaac/
+- [X] T007 [P] Create example Isaac Sim configuration files directory at frontend_book/docs/assets/isaac-config/
+
+**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+
+---
+
+## Phase 3: User Story 1 - NVIDIA Isaac Sim and Synthetic Data (Priority: P1) 🎯 MVP
+
+**Goal**: Create educational content explaining NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, including domain randomization and bridging to ROS 2 pipelines, delivering foundational knowledge for Isaac Sim and synthetic data.
+
+**Independent Test**: Can be fully tested by reading the chapter content and completing comprehension exercises that demonstrate understanding of Isaac Sim, synthetic data generation, and domain randomization, delivering the core understanding of how synthetic data can accelerate robot learning.
+
+### Implementation for User Story 1
+
+- [ ] T008 [P] [US1] Create Isaac Sim chapter at frontend_book/docs/ai-robot-brain-isaac/nvidia-isaac-sim-synthetic-data.md
+- [ ] T009 [US1] Add content about role of photorealistic simulation in Physical AI to nvidia-isaac-sim-synthetic-data.md
+- [ ] T010 [US1] Add content about generating synthetic datasets for perception models to nvidia-isaac-sim-synthetic-data.md
+- [ ] T011 [US1] Add content about domain randomization for robust robot learning to nvidia-isaac-sim-synthetic-data.md
+- [ ] T012 [US1] Add content about bridging Isaac Sim outputs to ROS 2 pipelines to nvidia-isaac-synthetic-data.md
+- [ ] T013 [P] [US1] Create diagrams for Isaac Sim concepts in frontend_book/docs/assets/ai-robot-brain-isaac/
+- [ ] T014 [US1] Add diagrams to Isaac Sim chapter with proper alt text
+- [ ] T015 [US1] Add learning objectives and outcomes to nvidia-isaac-sim-synthetic-data.md
+- [ ] T016 [US1] Add exercises and comprehension questions to nvidia-isaac-synthetic-data.md
+- [ ] T017 [US1] Add example code/configurations for Isaac Sim synthetic data to nvidia-isaac-synthetic-data.md
+
+**Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
+
+---
+
+## Phase 4: User Story 2 - Isaac ROS: Accelerated Perception (Priority: P2)
+
+**Goal**: Create educational content on Isaac ROS architecture, hardware-accelerated Visual SLAM, real-time perception pipelines, and integrating cameras and sensors with ROS 2, delivering the ability to create real-time perception systems for humanoid robots.
+
+**Independent Test**: Can be fully tested by implementing Isaac ROS perception nodes, configuring hardware-accelerated VSLAM, and integrating cameras and sensors with ROS 2, delivering the ability to create real-time perception systems for humanoid robots.
+
+### Implementation for User Story 2
+
+- [ ] T018 [P] [US2] Create Isaac ROS chapter at frontend_book/docs/ai-robot-brain-isaac/isaac-ros-accelerated-perception.md
+- [ ] T019 [US2] Add content about Isaac ROS architecture overview to isaac-ros-accelerated-perception.md
+- [ ] T020 [US2] Add content about hardware-accelerated Visual SLAM to isaac-ros-accelerated-perception.md
+- [ ] T021 [US2] Add content about real-time perception pipelines for humanoid robots to isaac-ros-accelerated-perception.md
+- [ ] T022 [US2] Add content about integrating cameras and sensors with ROS 2 to isaac-ros-accelerated-perception.md
+- [ ] T023 [P] [US2] Create diagrams for Isaac ROS concepts in frontend_book/docs/assets/ai-robot-brain-isaac/
+- [ ] T024 [US2] Add diagrams to Isaac ROS chapter with proper alt text
+- [ ] T025 [US2] Add code examples with proper syntax highlighting to isaac-ros-accelerated-perception.md
+- [ ] T026 [US2] Add exercises for implementing Isaac ROS perception to isaac-ros-accelerated-perception.md
+- [ ] T027 [US2] Add example Isaac ROS configuration files to frontend_book/docs/assets/ai-robot-brain-isaac/
+
+**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
+
+---
+
+## Phase 5: User Story 3 - Autonomous Navigation with Nav2 (Priority: P3)
+
+**Goal**: Create educational content on Nav2 navigation stack for humanoid robots, including localization, mapping, path planning concepts, and adapting Nav2 for bipedal movement with perception-planning-control coordination, delivering the ability to create autonomous navigation for bipedal humanoid movement.
+
+**Independent Test**: Can be fully tested by implementing Nav2 navigation stack components, configuring localization and mapping for humanoid robots, and coordinating perception, planning, and control systems, delivering the ability to create autonomous navigation for bipedal humanoid movement.
+
+### Implementation for User Story 3
+
+- [ ] T028 [P] [US3] Create Nav2 navigation chapter at frontend_book/docs/ai-robot-brain-isaac/autonomous-navigation-nav2.md
+- [ ] T029 [US3] Add content about Nav2 navigation stack overview for humanoid robots to autonomous-navigation-nav2.md
+- [ ] T030 [US3] Add content about localization, mapping, and path planning concepts to autonomous-navigation-nav2.md
+- [ ] T031 [US3] Add content about adapting Nav2 for bipedal humanoid movement to autonomous-navigation-nav2.md
+- [ ] T032 [US3] Add content about coordinating perception, planning, and control to autonomous-navigation-nav2.md
+- [ ] T033 [P] [US3] Create diagrams for Nav2 concepts in frontend_book/docs/assets/ai-robot-brain-isaac/
+- [ ] T034 [US3] Add diagrams to Nav2 navigation chapter with proper alt text
+- [ ] T035 [US3] Add code examples with proper syntax highlighting to autonomous-navigation-nav2.md
+- [ ] T036 [US3] Add exercises for implementing Nav2 navigation to autonomous-navigation-nav2.md
+
+**Checkpoint**: All user stories should now be independently functional
+
+---
+
+## Phase N: Polish & Cross-Cutting Concerns
+
+**Purpose**: Improvements that affect multiple user stories
+
+- [ ] T037 [P] Add navigation sidebar configuration for all AI-robot brain chapters
+- [ ] T038 [P] Add search functionality and indexing for AI-robot brain content
+- [ ] T039 Add responsive design improvements for mobile viewing of AI-robot brain content
+- [ ] T040 [P] Add accessibility features (alt text, ARIA labels, etc.) to AI-robot brain content
+- [ ] T041 Add table of contents and internal linking between AI-robot brain chapters
+- [ ] T042 Add code block copy functionality to AI-robot brain content
+- [ ] T043 [P] Add dark/light mode toggle for AI-robot brain content
+- [ ] T044 Add summary and next steps sections to each AI-robot brain chapter
+- [ ] T045 Update quickstart guide with final AI-robot brain project structure
+- [X] T046 Run site build to verify all AI-robot brain content renders correctly
+
+---
+
+## Dependencies & Execution Order
+
+### Phase Dependencies
+
+- **Setup (Phase 1)**: No dependencies - can start immediately
+- **Foundational (Phase 2)**: Depends on Setup completion - BLOCKS all user stories
+- **User Stories (Phase 3+)**: All depend on Foundational phase completion
+  - User stories can then proceed in parallel (if staffed)
+  - Or sequentially in priority order (P1 → P2 → P3)
+- **Polish (Final Phase)**: Depends on all desired user stories being complete
+
+### User Story Dependencies
+
+- **User Story 1 (P1)**: Can start after Foundational (Phase 2) - No dependencies on other stories
+- **User Story 2 (P2)**: Can start after Foundational (Phase 2) - May reference concepts from US1 but should be independently testable
+- **User Story 3 (P3)**: Can start after Foundational (Phase 2) - May reference concepts from US1/US2 but should be independently testable
+
+### Within Each User Story
+
+- Content before exercises
+- Basic concepts before advanced applications
+- Theory before practical examples
+- Story complete before moving to next priority
+
+### Parallel Opportunities
+
+- All Setup tasks marked [P] can run in parallel
+- All Foundational tasks marked [P] can run in parallel (within Phase 2)
+- Once Foundational phase completes, all user stories can start in parallel (if team capacity allows)
+- Models within a story marked [P] can run in parallel
+- Different user stories can be worked on in parallel by different team members
+
+---
+
+## Parallel Example: User Story 1
+
+```bash
+# Launch all content creation for User Story 1 together:
+Task: "Create module index page at frontend_book/docs/ai-robot-brain-isaac/index.md"
+Task: "Create Isaac Sim chapter at frontend_book/docs/ai-robot-brain-isaac/nvidia-isaac-sim-synthetic-data.md"
+Task: "Create diagrams for Isaac Sim concepts in frontend_book/docs/assets/ai-robot-brain-isaac/"
+```
+
+---
+
+## Implementation Strategy
+
+### MVP First (User Story 1 Only)
+
+1. Complete Phase 1: Setup
+2. Complete Phase 2: Foundational (CRITICAL - blocks all stories)
+3. Complete Phase 3: User Story 1
+4. **STOP and VALIDATE**: Test User Story 1 independently
+5. Deploy/demo if ready
+
+### Incremental Delivery
+
+1. Complete Setup + Foundational → Foundation ready
+2. Add User Story 1 → Test independently → Deploy/Demo (MVP!)
+3. Add User Story 2 → Test independently → Deploy/Demo
+4. Add User Story 3 → Test independently → Deploy/Demo
+5. Each story adds value without breaking previous stories
+
+### Parallel Team Strategy
+
+With multiple developers:
+
+1. Team completes Setup + Foundational together
+2. Once Foundational is done:
+   - Developer A: User Story 1
+   - Developer B: User Story 2
+   - Developer C: User Story 3
+3. Stories complete and integrate independently
+
+---
+
+## Notes
+
+- [P] tasks = different files, no dependencies
+- [Story] label maps task to specific user story for traceability
+- Each user story should be independently completable and testable
+- Commit after each task or logical group
+- Stop at any checkpoint to validate story independently
+- Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
