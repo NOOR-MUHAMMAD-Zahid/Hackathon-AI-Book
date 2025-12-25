@@ -15,6 +15,9 @@ This course covers:
 - **ROS 2 Robotic Nervous System**: Introduction to ROS 2 architecture and its comparison to biological nervous systems
 - **ROS 2 Communication**: Nodes, topics, and services for robot control
 - **URDF Modeling**: Creating humanoid robot models using URDF files
+- **Digital Twin Simulation**: Physics simulation and sensor modeling with Gazebo
+- **AI-Robot Brain with NVIDIA Isaac**: Isaac Sim and Isaac ROS for perception and navigation
+- **Vision-Language-Action Integration**: Voice interfaces and cognitive planning for humanoid robots
 
 ## Installation
 

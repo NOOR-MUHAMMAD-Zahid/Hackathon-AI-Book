@@ -41,7 +41,7 @@ Isaac Sim is built on NVIDIA Omniverse, providing:
 - **Extensible Framework**: Custom sensors, robots, and environments
 - **ROS 2 Integration**: Seamless integration with ROS 2 ecosystems
 
-![Isaac Sim Architecture](/img/ai-robot-brain-isaac/isaac-sim-architecture.png "NVIDIA Isaac Sim architecture showing key components and integration with ROS 2 ecosystems")
+> **Figure 1**: NVIDIA Isaac Sim architecture showing key components and integration with ROS 2 ecosystems
 
 *Figure 1: Isaac Sim architecture showing the key components and integration with ROS 2 ecosystems. The diagram illustrates how Isaac Sim integrates with NVIDIA Omniverse platform and connects to ROS 2 for robotic simulation and development.*
 

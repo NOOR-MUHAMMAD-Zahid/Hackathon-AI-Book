@@ -85,7 +85,7 @@ Isaac ROS Packages
 └── isaac_ros_visualization
 ```
 
-![Isaac ROS Architecture](/img/ai-robot-brain-isaac/isaac-ros-architecture.png "NVIDIA Isaac ROS architecture showing core components and hardware acceleration")
+> **Figure 1**: NVIDIA Isaac ROS architecture showing core components and hardware acceleration
 
 *Figure 1: Isaac ROS architecture showing the core components and hardware acceleration. The diagram illustrates how Isaac ROS packages leverage GPU and Tensor Core acceleration for real-time robotic perception and navigation.*
 
@@ -178,7 +178,7 @@ visual_slam:
 </launch>
 ```
 
-![Visual SLAM Pipeline](/img/ai-robot-brain-isaac/visual-slam-pipeline.png "Isaac ROS Visual SLAM processing pipeline showing GPU-accelerated stages")
+> **Figure 2**: Isaac ROS Visual SLAM processing pipeline showing GPU-accelerated stages
 
 *Figure 2: Visual SLAM pipeline showing the Isaac ROS Visual SLAM processing pipeline. The diagram illustrates how camera images are processed through GPU-accelerated stages to produce real-time localization and mapping.*
 

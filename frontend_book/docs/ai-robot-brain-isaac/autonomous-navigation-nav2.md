@@ -35,7 +35,7 @@ The Navigation2 (Nav2) stack is the modern navigation framework for ROS 2, desig
 - **Recovery Behaviors**: Actions to recover from navigation failures
 - **Lifecycle Manager**: Manages the state of navigation components
 
-![Nav2 Stack Architecture](/img/ai-robot-brain-isaac/nav2-stack-architecture.png "Navigation2 stack architecture for humanoid robots showing core components and humanoid-specific adaptations")
+> **Figure 1**: Navigation2 stack architecture for humanoid robots showing core components and humanoid-specific adaptations
 
 *Figure 1: Navigation2 stack architecture for humanoid robots showing core components and humanoid-specific adaptations. The diagram illustrates how the navigation stack accommodates bipedal locomotion requirements and human-scale environments.*
 
@@ -62,7 +62,7 @@ Navigation Server
     └── Component state management
 ```
 
-![Perception-Planning-Control Coordination](/img/ai-robot-brain-isaac/perception-planning-control-coordination.png "Perception-Planning-Control coordination in Nav2 showing information flow and feedback loops")
+> **Figure 2**: Perception-Planning-Control coordination in Nav2 showing information flow and feedback loops
 
 *Figure 2: Perception-Planning-Control coordination in Nav2 showing the flow of information and feedback loops between perception, planning, and control systems. The diagram illustrates how these subsystems work together for effective humanoid robot navigation.*
 
