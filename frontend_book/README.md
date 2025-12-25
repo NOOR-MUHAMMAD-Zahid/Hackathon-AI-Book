@@ -43,4 +43,6 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
+The site is deployed at: https://ai-book-flame.vercel.app/
+
 The site is configured for GitHub Pages deployment and will automatically deploy when changes are pushed to the main branch via the GitHub Actions workflow in `.github/workflows/deploy.yml`.

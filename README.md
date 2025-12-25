@@ -143,6 +143,6 @@ This course was developed as part of a hackathon project to create an educationa
 ---
 
 <div align="center">
-  <h3>Ready to start your journey in AI robotics? Begin with <a href="https://github.com/NOOR-MUHAMMAD-Zahid/Hackathon-AI-Book/tree/main/frontend_book/docs/intro.md">the introduction</a> and explore the modules!</h3>
+  <h3>Ready to start your journey in AI robotics? <a href="https://ai-book-flame.vercel.app/">View Live Site</a> | Begin with <a href="https://github.com/NOOR-MUHAMMAD-Zahid/Hackathon-AI-Book/tree/main/frontend_book/docs/intro.md">the introduction</a> and explore the modules!</h3>
   <p>Happy coding and building! 🤖</p>
 </div>
